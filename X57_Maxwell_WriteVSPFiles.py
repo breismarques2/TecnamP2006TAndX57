@@ -51,27 +51,27 @@ def main():
     print('Mission Analysis')
     results = mission.evaluate()
     
-    np.savetxt("Surrogate_Inputs_Alt.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_alt, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Inputs_Alt_Normalized.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_alt_normalized, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Inputs_Alpha.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_alpha, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Inputs_Alpha_Normalized.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_alpha_normalized, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Inputs_Mach.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_mach, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Inputs_RPM.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_rpm, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Inputs_RPM_Normalized.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_rpm_normalized, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Inputs_Cp.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_cp, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Inputs_Ct.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_ct, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Inputs_Alt.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_alt, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Inputs_Alt_Normalized.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_alt_normalized, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Inputs_Alpha.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_alpha, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Inputs_Alpha_Normalized.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_alpha_normalized, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Inputs_Mach.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_mach, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Inputs_RPM.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_rpm, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Inputs_RPM_Normalized.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_rpm_normalized, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Inputs_Cp.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_cp, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Inputs_Ct.csv", configs.base.fuselages.fuselage.OpenVSP_values.surrogate_ct, delimiter =", ", fmt = '%.18f')
     
-    np.savetxt("Surrogate_Results_CL_HS.csv", configs.base.fuselages.fuselage.OpenVSP_values.cl_hs, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Results_CDi_HS.csv", configs.base.fuselages.fuselage.OpenVSP_values.cdi_hs, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Results_CL_VS.csv", configs.base.fuselages.fuselage.OpenVSP_values.cl_vs, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Results_CDi_VS.csv", configs.base.fuselages.fuselage.OpenVSP_values.cdi_vs, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Results_CL_Main_Wing.csv", configs.base.fuselages.fuselage.OpenVSP_values.cl_main_wing, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Results_CDi_Main_Wing.csv", configs.base.fuselages.fuselage.OpenVSP_values.cdi_main_wing, delimiter =", ", fmt = '%.18f')    
-    np.savetxt("Surrogate_Results_CL.csv", configs.base.fuselages.fuselage.OpenVSP_values.cl, delimiter =", ", fmt = '%.18f')
-    np.savetxt("Surrogate_Results_CDi.csv", configs.base.fuselages.fuselage.OpenVSP_values.cdi, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Results_CL_HS.csv", configs.base.fuselages.fuselage.OpenVSP_values.cl_hs, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Results_CDi_HS.csv", configs.base.fuselages.fuselage.OpenVSP_values.cdi_hs, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Results_CL_VS.csv", configs.base.fuselages.fuselage.OpenVSP_values.cl_vs, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Results_CDi_VS.csv", configs.base.fuselages.fuselage.OpenVSP_values.cdi_vs, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Results_CL_Main_Wing.csv", configs.base.fuselages.fuselage.OpenVSP_values.cl_main_wing, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Results_CDi_Main_Wing.csv", configs.base.fuselages.fuselage.OpenVSP_values.cdi_main_wing, delimiter =", ", fmt = '%.18f')    
+    #np.savetxt("Surrogate_Results_CL.csv", configs.base.fuselages.fuselage.OpenVSP_values.cl, delimiter =", ", fmt = '%.18f')
+    #np.savetxt("Surrogate_Results_CDi.csv", configs.base.fuselages.fuselage.OpenVSP_values.cdi, delimiter =", ", fmt = '%.18f')
 
     # print weight breakdown
-    print_weight_breakdown(configs.base,filename = 'P2006T_Electric_weight_breakdown.dat')
+    print_weight_breakdown(configs.base,filename = 'X57_weight_breakdown.dat')
     
 
     # print engine data into file
@@ -82,13 +82,13 @@ def main():
     ref_condition = Data()
     ref_condition.mach_number =  0.21
     ref_condition.reynolds_number = 7.26e6   
-    print_parasite_drag(ref_condition,configs.cruise,analyses,'P2006T_parasite_drag.dat')
+    print_parasite_drag(ref_condition,configs.cruise,analyses,'X57_parasite_drag.dat')
 
     # print compressibility drag data into file
     #print_compress_drag(configs.cruise,analyses,filename = 'P2006T_compress_drag.dat')
 
     # print mission breakdown
-    print_mission_breakdown(results,filename='P2006T_mission_breakdown.dat')
+    print_mission_breakdown(results,filename='X57_mission_breakdown.dat')
 
     
     #print vehicle_setup()
@@ -602,6 +602,7 @@ def vehicle_setup():
     prop = SUAVE.Components.Energy.Converters.Propeller() 
 
     prop.number_blades       = 3.0
+    #prop.propulsive_efficiency = 0.95
     prop.freestream_velocity = 60.3504*Units['m/s']    
     prop.angular_velocity    = 1300.  * Units.rpm  
     prop.tip_radius          = 1.524/2.0 * Units.meter
@@ -612,6 +613,7 @@ def vehicle_setup():
     prop.origin              = [[3.507 * Units.meter , 4.819 * Units.meter, 2.226 * Units.meter]]                 
     prop.symmetry            = True
     prop.design_power        = 60000.0 * Units.watts  #59600
+    #prop.airfoil_geometry    = None
     prop                     = propeller_design(prop)    
     batteryprop.propeller            = prop    
     
@@ -619,11 +621,12 @@ def vehicle_setup():
     rot = SUAVE.Components.Energy.Converters.Propeller() 
 
     rot.number_blades       = 5.0
+    #rot.propulsive_efficiency = 0.95
     rot.freestream_velocity = 60.3504*Units['m/s']    
-    rot.angular_velocity    = 600.  * Units.rpm  
+    rot.angular_velocity    = 3600.  * Units.rpm  
     rot.tip_radius          = 0.579/2.0 * Units.meter
     rot.hub_radius          = 0.155/2.0 * Units.meter
-    rot.design_Cl           = 0.8
+    rot.design_Cl           = 0.6
     rot.design_altitude     = 3657.6 * Units.meter
     rot.design_thrust       = None  
     rot.origin              = [[3.45 * Units.meter , 0.888 * Units.meter, 2.095 * Units.meter]]                 
