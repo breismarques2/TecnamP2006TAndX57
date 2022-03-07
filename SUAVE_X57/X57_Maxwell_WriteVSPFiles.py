@@ -234,8 +234,8 @@ def vehicle_setup():
     # basic parameters
     vehicle.reference_area         = 6.194 * Units['meters**2']  
     vehicle.passengers             = 4
-    #vehicle.systems.control        = "fully powered" 
-    #vehicle.systems.accessories    = "medium range"
+    vehicle.systems.control        = "fully powered" 
+    vehicle.systems.accessories    = "medium range"  #For Weight Analysis
     
     # ------------------------------------------------------------------
     #  Avionics (only for weight analysis)
@@ -274,7 +274,8 @@ def vehicle_setup():
     wing = SUAVE.Components.Wings.Main_Wing()
     wing.tag = 'main_wing'
 
-    wing.sweeps.quarter_chord    = 0.0 * Units.deg
+    wing.sweeps.quarter_chord    = 1.226 * Units.deg
+    wing.sweeps.leading_edge     = 1.9 * Units.deg
     wing.thickness_to_chord      = 0.14967
     wing.areas.reference         = 6.194 * Units['meters**2']  
     wing.spans.projected         = 9.639 * Units.meter  
@@ -286,12 +287,14 @@ def vehicle_setup():
     wing.chords.mean_aerodynamic = (wing.chords.root*(2.0/3.0)*((1.0+wing.taper+wing.taper**2.0)/(1.0+wing.taper)))
 
     wing.aspect_ratio            = wing.spans.projected**2. / wing.areas.reference
+    
+    wing.span_efficiency         = 0.95
 
     wing.twists.root             = 2.0 * Units.degrees
     wing.twists.tip              = 0.0 * Units.degrees
 
-    wing.origin                  = [[3.679, 0., 2.202]]
-    wing.aerodynamic_center      = [0.189, 0., 2.202]
+    wing.origin                  = [[2.85* Units.meter,0,1.077* Units.meter]]
+    wing.aerodynamic_center      = [0.189, 0., 1.077]
 
     wing.vertical                = False
     wing.symmetric               = True
@@ -307,7 +310,7 @@ def vehicle_setup():
     segment.twist                 = wing.twists.root
     segment.root_chord_percent    = 1.
     segment.dihedral_outboard     = 0. * Units.degrees
-    segment.sweeps.quarter_chord  = 0. * Units.degrees
+    segment.sweeps.quarter_chord  = wing.sweeps.quarter_chord
     segment.thickness_to_chord    = wing.thickness_to_chord
     
     
@@ -329,7 +332,7 @@ def vehicle_setup():
     segment.twist                 = wing.twists.tip
     segment.root_chord_percent    = 0.7
     segment.dihedral_outboard     = 0. * Units.degrees
-    segment.sweeps.quarter_chord  = 0. * Units.degrees
+    segment.sweeps.quarter_chord  = wing.sweeps.quarter_chord
     segment.thickness_to_chord    = wing.thickness_to_chord
     
     #segment airfoil
@@ -636,7 +639,7 @@ def vehicle_setup():
     batteryprop.rotor            = rot
     
     # Component 6.1 - Cruise Motor
-    motor_for                              = SUAVE.Components.Energy.Converters.Motor()
+    motor_for                          = SUAVE.Components.Energy.Converters.Motor()
     etam                               = 0.95
     v                                  = bat.max_voltage *3/4
     omeg                               = prop.angular_velocity  
@@ -820,15 +823,15 @@ def mission_setup(analyses, vehicle):
     #   Initialize the Mission
     # ------------------------------------------------------------------
     
-    mission = SUAVE.Analyses.Mission.Vary_Cruise.Given_Battery_Energy()
-    #mission = SUAVE.Analyses.Mission.Sequential_Segments()
+    #mission = SUAVE.Analyses.Mission.Vary_Cruise.Given_Battery_Energy()
+    mission = SUAVE.Analyses.Mission.Sequential_Segments()
     mission.tag = 'the_mission'
     mission.planet      = SUAVE.Attributes.Planets.Earth()
     
     # the cruise tag to vary cruise distance
-    mission.cruise_tag = 'cruise'
+    ##mission.cruise_tag = 'cruise'
     #print (analyses.base.weights.vehicle.mass_properties.operating_empty)
-    mission.target_battery_energy = 100
+    ##mission.target_battery_energy = 100
 
     #airport
     airport = SUAVE.Attributes.Airports.Airport()
@@ -858,12 +861,15 @@ def mission_setup(analyses, vehicle):
     ones_row = base_segment.state.ones_row
     base_segment.process.iterate.initials.initialize_battery = SUAVE.Methods.Missions.Segments.Common.Energy.initialize_battery
     base_segment.process.iterate.conditions.planet_position  = SUAVE.Methods.skip
-    #base_segment.process.iterate.unknowns.network            = vehicle.base.propulsors.propulsor.unpack_unknowns
-    #base_segment.process.iterate.residuals.network           = vehicle.base.propulsors.propulsor.residuals    
+    base_segment.process.iterate.unknowns.network            = vehicle.base.propulsors.propulsor.unpack_unknowns_transition
+    base_segment.process.iterate.residuals.network           = vehicle.base.propulsors.propulsor.residuals_transition    
     #base_segment.process.iterate.initials.initialize_battery = SUAVE.Methods.Missions.Segments.Common.Energy.initialize_battery
-    base_segment.state.unknowns.propeller_power_coefficient  = 0.005 * ones_row(1)
+    base_segment.state.unknowns.propeller_power_coefficient  = vehicle.base.propulsors.propulsor.propeller.power_coefficient[0]  * ones_row(1)
+    base_segment.state.unknowns.propeller_power_coefficient_lift  = vehicle.base.propulsors.propulsor.rotor.power_coefficient[0]  * ones_row(1)
+    base_segment.state.unknowns.throttle_lift  =  0.9  * ones_row(1)
+    #base_segment.state.unknowns.throttle  =  0.9  * ones_row(1)
     base_segment.state.unknowns.battery_voltage_under_load   = vehicle.base.propulsors.propulsor.battery.max_voltage * ones_row(1)
-    base_segment.state.residuals.network                     = 0. * ones_row(2)
+    base_segment.state.residuals.network                     = 0. * ones_row(4)
     
     # base segment
     #base_segment = Segments.Segment()
@@ -881,7 +887,8 @@ def mission_setup(analyses, vehicle):
     segment.analyses.extend( analyses.base )
     
     segment.battery_energy = vehicle.base.propulsors.propulsor.battery.max_energy * 1.
-    segment.state.unknowns.throttle = 0.9 * ones_row(1)
+    #segment.state.unknowns.throttle_lift = 0.9 * ones_row(1)
+    #segment.state.unknowns.throttle = 0.7 * ones_row(1)
     segment.altitude_start = 0.0   * Units.meter
     segment.altitude_end   = 2438.4   * Units.meter
     segment.climb_rate     = 1.0 * Units['m/s']
@@ -910,19 +917,20 @@ def mission_setup(analyses, vehicle):
     #base_segment.state.unknowns.battery_voltage_under_load   = vehicle.base.propulsors.propulsor.battery.max_voltage * ones_row(1)
     #base_segment.state.residuals.network                     = 0. * ones_row(2)
     
-    segment = Segments.Cruise.Constant_Mach_Constant_Altitude(base_segment)
-    segment.tag = "cruise" 
+    ##segment = Segments.Cruise.Constant_Mach_Constant_Altitude(base_segment)
+    ##segment.tag = "cruise" 
 
-    segment.analyses.extend( analyses.cruise )
+    ##segment.analyses.extend( analyses.cruise )
     
     #segment.battery_energy = vehicle.base.propulsors.propulsor.battery.max_energy * 1.
-    segment.mach  =  0.196  #0.196        #0.087       #0.099
+    ##segment.mach  =  0.196  #0.196        #0.087       #0.099
+    #segment.state.unknowns.throttle_lift = 0.826 * ones_row(1)
+    #segment.state.unknowns.throttle = 0.7 * ones_row(1)
     #segment.altitude = 2438.4   * Units.meter
-    segment.distance   = 200.0 * Units.nautical_miles
-    segment.state.unknowns.throttle = 0.826 * ones_row(1)
+    ##segment.distance   = 200.0 * Units.nautical_miles
 
     # add to mission
-    mission.append_segment(segment)
+    ##mission.append_segment(segment)
 
 
     # ------------------------------------------------------------------
@@ -993,7 +1001,7 @@ def plot_mission(results,line_style='bo-'):
     plot_aircraft_velocities(results, line_style)
     
     # Plot propeller conditions
-    plot_propeller_conditions(results, line_style)
+    plot_lift_cruise_network(results, line_style)
     
     plot_electronic_conditions(results, line_style)
     
