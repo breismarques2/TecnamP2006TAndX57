@@ -1,0 +1,51 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/EIGEN"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/EIGEN.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/EIGEN-complete.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EIGEN-prefix/src/EIGEN-stamp/EIGEN-install.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EIGEN-prefix/src/EIGEN-stamp/EIGEN-mkdir.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EIGEN-prefix/src/EIGEN-stamp/EIGEN-download.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EIGEN-prefix/src/EIGEN-stamp/EIGEN-update.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EIGEN-prefix/src/EIGEN-stamp/EIGEN-patch.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EIGEN-prefix/src/EIGEN-stamp/EIGEN-configure.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EIGEN-prefix/src/EIGEN-stamp/EIGEN-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "EIGEN" ],
+		"name" : "EIGEN"
+	}
+}

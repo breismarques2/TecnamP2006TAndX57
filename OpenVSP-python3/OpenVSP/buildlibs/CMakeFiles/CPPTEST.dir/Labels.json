@@ -1,0 +1,51 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/CPPTEST"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/CPPTEST.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/CPPTEST-complete.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CPPTEST-prefix/src/CPPTEST-stamp/CPPTEST-install.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CPPTEST-prefix/src/CPPTEST-stamp/CPPTEST-mkdir.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CPPTEST-prefix/src/CPPTEST-stamp/CPPTEST-download.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CPPTEST-prefix/src/CPPTEST-stamp/CPPTEST-update.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CPPTEST-prefix/src/CPPTEST-stamp/CPPTEST-patch.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CPPTEST-prefix/src/CPPTEST-stamp/CPPTEST-configure.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CPPTEST-prefix/src/CPPTEST-stamp/CPPTEST-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "CPPTEST" ],
+		"name" : "CPPTEST"
+	}
+}

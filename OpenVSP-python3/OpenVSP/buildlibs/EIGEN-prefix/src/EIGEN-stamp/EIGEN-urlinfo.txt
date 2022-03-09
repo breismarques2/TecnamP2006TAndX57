@@ -1,0 +1,3 @@
+repository='external project URL'
+module='/Users/Bruno/OpenVSP-python3/OpenVSP/repo/Libraries/eigen-eigen-323c052e1731.tar.gz'
+tag=''

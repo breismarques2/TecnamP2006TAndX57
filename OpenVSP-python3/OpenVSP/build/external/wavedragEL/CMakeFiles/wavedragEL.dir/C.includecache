@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/wavedragEL/wavedragEL.c
+wavedragEL.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/wavedragEL/wavedragEL.h
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/wavedragEL/wavedragEL.h
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+

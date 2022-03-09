@@ -1,0 +1,13 @@
+# Target labels
+ STEPCODE
+# Source files and their labels
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/STEPCODE
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/STEPCODE.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/STEPCODE-complete.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-install.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-mkdir.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-download.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-update.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-patch.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-configure.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-build.rule

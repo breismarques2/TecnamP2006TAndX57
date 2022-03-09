@@ -1,0 +1,15 @@
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/CMakeFiles/install/local.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/CMakeFiles/install/strip.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/CMakeFiles/install.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/CMakeFiles/list_install_components.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/CMakeFiles/rebuild_cache.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/CMakeFiles/edit_cache.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/src/CMakeFiles/install/local.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/src/CMakeFiles/install/strip.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/src/CMakeFiles/install.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/src/CMakeFiles/list_install_components.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/src/CMakeFiles/rebuild_cache.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/src/CMakeFiles/edit_cache.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/src/CMakeFiles/mergetest.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/src/CMakeFiles/readtest.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-build/src/CMakeFiles/iges_static.dir

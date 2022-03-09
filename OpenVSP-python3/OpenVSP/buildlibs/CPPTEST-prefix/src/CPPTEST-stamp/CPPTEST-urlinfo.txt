@@ -1,0 +1,3 @@
+repository='external project URL'
+module='/Users/Bruno/OpenVSP-python3/OpenVSP/repo/Libraries/cpptest-2.0.0.tar.gz'
+tag=''

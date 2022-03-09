@@ -1,0 +1,3 @@
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/include/exprparse/exprparse.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/lib/libexprparse.a
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/bin/exprcalc

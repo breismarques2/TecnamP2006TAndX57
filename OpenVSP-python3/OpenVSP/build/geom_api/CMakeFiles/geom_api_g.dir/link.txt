@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libgeom_api_g.a  CMakeFiles/geom_api_g.dir/APIErrorMgr.cpp.o CMakeFiles/geom_api_g.dir/GuiInterface.cpp.o CMakeFiles/geom_api_g.dir/VSP_Geom_API.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libgeom_api_g.a

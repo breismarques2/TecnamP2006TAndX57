@@ -1,0 +1,3 @@
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-build/schema_scanner/CMakeFiles/rebuild_cache.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-build/schema_scanner/CMakeFiles/edit_cache.dir
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-build/schema_scanner/CMakeFiles/schema_scanner.dir

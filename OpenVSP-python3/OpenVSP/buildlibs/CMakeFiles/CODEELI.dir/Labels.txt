@@ -1,0 +1,13 @@
+# Target labels
+ CODEELI
+# Source files and their labels
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/CODEELI
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/CODEELI.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/CODEELI-complete.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CODEELI-prefix/src/CODEELI-stamp/CODEELI-install.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CODEELI-prefix/src/CODEELI-stamp/CODEELI-mkdir.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CODEELI-prefix/src/CODEELI-stamp/CODEELI-download.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CODEELI-prefix/src/CODEELI-stamp/CODEELI-update.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CODEELI-prefix/src/CODEELI-stamp/CODEELI-patch.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CODEELI-prefix/src/CODEELI-stamp/CODEELI-configure.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CODEELI-prefix/src/CODEELI-stamp/CODEELI-build.rule

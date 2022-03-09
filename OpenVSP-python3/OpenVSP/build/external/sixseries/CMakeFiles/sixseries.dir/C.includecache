@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/NACA_6_series.c
+f2c.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/f2c.h
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/f2c.h
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/r_sign.c
+f2c.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/f2c.h
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/s_cmp.c
+f2c.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/f2c.h
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/s_copy.c
+f2c.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/f2c.h
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/s_stop.c
+stdio.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/stdio.h
+f2c.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/f2c.h
+stdlib.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/sixseries/stdlib.h
+

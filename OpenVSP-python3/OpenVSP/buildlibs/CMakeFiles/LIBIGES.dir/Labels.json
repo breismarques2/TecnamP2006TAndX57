@@ -1,0 +1,51 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/LIBIGES"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/LIBIGES.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/LIBIGES-complete.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-install.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-mkdir.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-download.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-update.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-patch.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-configure.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "LIBIGES" ],
+		"name" : "LIBIGES"
+	}
+}

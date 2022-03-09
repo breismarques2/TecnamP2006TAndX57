@@ -1,0 +1,34 @@
+Resolution successful.  Writing C++ output...
+
+MULTIPLE INHERITANCE for entity: face_surface
+        SUPERTYPE 1: face (principal supertype)
+        SUPERTYPE 2: geometric_representation_item
+
+MULTIPLE INHERITANCE for entity: cartesian_transformation_operator
+        SUPERTYPE 1: geometric_representation_item (principal supertype)
+        SUPERTYPE 2: functionally_defined_transformation
+
+MULTIPLE INHERITANCE for entity: bounded_surface_curve
+        SUPERTYPE 1: surface_curve (principal supertype)
+        SUPERTYPE 2: bounded_curve
+
+MULTIPLE INHERITANCE for entity: poly_loop
+        SUPERTYPE 1: loop (principal supertype)
+        SUPERTYPE 2: geometric_representation_item
+
+MULTIPLE INHERITANCE for entity: edge_loop
+        SUPERTYPE 1: loop (principal supertype)
+        SUPERTYPE 2: path
+
+MULTIPLE INHERITANCE for entity: bounded_pcurve
+        SUPERTYPE 1: pcurve (principal supertype)
+        SUPERTYPE 2: bounded_curve
+
+MULTIPLE INHERITANCE for entity: vertex_point
+        SUPERTYPE 1: vertex (principal supertype)
+        SUPERTYPE 2: geometric_representation_item
+
+MULTIPLE INHERITANCE for entity: edge_curve
+        SUPERTYPE 1: edge (principal supertype)
+        SUPERTYPE 2: geometric_representation_item
+Finished writing files.

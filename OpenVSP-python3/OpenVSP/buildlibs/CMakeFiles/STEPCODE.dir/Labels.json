@@ -1,0 +1,51 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/STEPCODE"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/STEPCODE.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/STEPCODE-complete.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-install.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-mkdir.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-download.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-update.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-patch.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-configure.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE-stamp/STEPCODE-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "STEPCODE" ],
+		"name" : "STEPCODE"
+	}
+}

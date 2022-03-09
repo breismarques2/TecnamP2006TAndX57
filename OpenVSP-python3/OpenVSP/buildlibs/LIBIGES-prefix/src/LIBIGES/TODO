@@ -1,0 +1,198 @@
+1. [DONE] Implement some entity dependency code; see p.69 of IGES spec.
+For example, every entity added to a Composite Curve should
+have a Physical Dependency. In turn any Composite Curve
+acting as a Curve on Surface is dependent on that
+Curve on Surface (E142).
+
+2. In future if someone wants to render curves etc, it makes
+   little sense to let the user implement the interpolations.
+   Implement interpolation routines which return an entire
+   point set for each curve or surface and let the specific
+   IGES entity calculate the point set based on an error
+   parameter specified by the user (default: IGES minResolution).
+
+3. Surface of Revolution:
+    + ensure Axis is a LINE entity
+
+4. [FIXED] [URGENT] Bug in IGES_POINT; 'p0 = p1 - p2' returns the wrong result
+
+5. To load Molex model 473460001.igs support is required for entities:
+    + [DONE] Type 104: Conic Arc
+    + Type 186: Manifold Solid B-REP
+    + [DONE] Type 502: Vertex List
+    + [DONE] Type 504: Edge List
+    + Type 508: Loop
+    + Type 510: Face
+    + Type 514: Shell
+
+6. [BUG] A NURBS curve must not scale its control points if it is
+   a curve on a parametric surface (a parent entity is a BPTR of
+   an Entity 142: Curve on Parametric Surface). Note than in other
+   cases a NURBS curve may have its control points scaled - for
+   example when it is a curve used as a generatrix for a surface
+   of revolution. As an ad-hoc remedy we may simply refuse to scale
+   NURBS curves; this would work in most cases since these curves
+   are used almost exclusively as children of a BPTR entity.
+   Fixing the behavior may involve some refactoring of the load code
+   to ensure that any scaling is performed after all associations
+   have been established; this will ensure that ancestors can be
+   correctly traversed.
+
+7. [FIXED]
+   [BUG] On reading a file E102::Associate() may fail if the referenced
+   curve has an associated transform and has not invoked Associate().
+   To fix this requires setting an "assoc" flag of some sort and all
+   entities whose Associate() routines rely on subentities being
+   correctly associated must invoke Associate() on those entities
+   before invoking any other routines on them.
+
+8. [BUG] When AddReference() is called, the function returns TRUE
+   when an entry is a duplicate. The invoking routine should not
+   push the Child Entity onto its list a second time or we may
+   have data corruption.
+
+**** GENERAL ****
+Caveats:
+	To keep the code as simple as possible a number of constraints
+   are applied. Without enforcing various constraints we would have to
+   add substantial code which would make this library more like a full
+   functional MCAD, a situation which should be avoided. Unfortunately
+   this desire for simplicity also results in the possibility of
+   incorrect behavior in a number of pathological cases. This is a
+   short list of known constraints and expected bad behavior.
+
+   A. Constraints:
+      + An outline O2 being subtracted or added to an outline O1 may
+        only intersect at 2 unique points. If there are an uneven
+        number of unique points then we have invalid geometry.
+        If we have an equal number of unique points N and N > 2
+        then a subtraction operation may yield multiple bodies
+        while for addition the merging code becomes substantially
+        more complex. A corollary to this is that a cutout/add-on
+        may not intersect an outline along an edge. Imagine a simple
+        case of a rectangular outline and a rectangular cutout which
+        lies along 1 or 2 edges of the outline; such a case must clearly
+        result in valid geometry, however such cases are prohibited by
+        this constraint. The same prohibition applies to similar cases
+        involving the merging (addition) of outlines.
+
+      + Cutouts and circular holes must not overlap eachother. This
+        means that all overlapping cutouts and circular holes must
+        be merged prior to specifying them as a cutout to a board
+        outline. The recommended order of operations are:
+        (a) subtract all circular holes from the main outline and
+        repeat the operation until no more holes intersect the
+        main outline. (b) merge all overlapping circular holes.
+        (c) add all circular holes to each non-circular cutout
+        until no more circular holes overlap a cutout. (d) merge
+        all overlapping non-circular cutouts; note the constraint
+        on 2 unique intersection points applies to this operation.
+
+      + Cutouts/add-ons must not exist entirely outside the board
+        outline; the code does not check for such cases and they will
+        result in bad geometry. However it would be possible to
+        test for this bad geometry in the future without
+        too great a cost in computations; once it has been
+        determined that a cutout/add-on does not intersect the main
+        outline then it is a simple matter of testing a single
+        point on the cutout and alerting the caller to whether that
+        point was inside or outside the outline. It would be the
+        responsibility of the calling routine to determine if the
+        operation were a case of bad geometry. Cases of such bad
+        geometry would include (a) hole or cutout entirely outside
+        the main outline, (b) add-on entirely inside an outline -
+        this includes the case of a cutout entirely within a cutout.
+        Cases which are not necessarily bad geometry include
+        cutouts entirely outside another cutout or cutouts entirely
+        inside the main outline.
+
+      + Outlines must not be self-intersecting; this is a requirement
+        of all MCAD software but the condition is not checked in
+        this library.
+
+      + Cutouts may not intersect an outline at a single point;
+        this would result in bad geometry. This constraint is
+        not unique to this library; no manufacturing design
+        software will gladly accept what is essentially a
+        wall thickness of 0.
+
+   B. Bad behavior:
+      + Applying cutouts:
+        (a) Imagine a solid consisting of 2 circles with equal radius R
+        and a distance between centers, D where D < 2*R. This solid
+        would have a figure-8 appearance. Now imagine a cutout within
+        that solid and which intersects the vertices of the figure 8.
+        Applying the cutout would result in invalid geometry,
+        specifically the figure 8 will be split into 2 bodies which
+        touch at 2 points. This pathological case can be flagged
+        by testing the cutout to determine whether all points
+        aside from the points of intersection lie within the figure 8,
+        however to reduce the number of computations such a
+        check is not performed. It is possible for the user to take
+        any arbitrary solid and construct an arbitrary cutout which
+        divides the solid into 2 solids which coincide at 2 points.
+        In all such cases the outline manipulation code will fail
+        with somewhat unpredictable results. It is not possible
+        to create an outline which results in 3 or more bodies since
+        such an outline would violate the constraint on 2 unique
+        points of intersection. However, the user can willfully
+        ignore the constraint on non-overlapping cutouts to create
+        multiple cutouts which in principle should divide the solid
+        into more than 2 bodies.
+        (b) A related problem is the case where an outline and a
+        cutout do not overlap but intersect at 2 unique points;
+        this will result in bad geometry. Once again it is possible
+        to test for the condition but at the expense of almost
+        doubling computation times so the check is simply not
+        performed.
+
+      + Adding outlines:
+        (a) Imagine an outline edge with a crescent notch on the
+        edge and an included angle > PI radians on the arc. A
+        circular disc can sit in such a way that the outline
+        is intersected at 2 points but the disc is not large
+        enough to cover the entire crescent shape and correct
+        addition of the disc would result in 2 bodies coincident
+        at 2 points. In such a case the resulting geometry will
+        be incorrect; the cresent niche will be removed and
+        there will be a small protrusion in its place. In general
+        it is possible to contrive 2 arbitrary outlines which
+        intersect at 2 unique points but produce 2 bodies; in all
+        such cases the code will produce bad geometry. In this
+        particular case the intersecting bodies lie entirely
+        outside eachother but are coincident at 2 points.
+        (b) In contrast to (a), imagine 2 outlines with one
+        outline entirely within the second outline but intersecting
+        at 2 unique points, for example a rectangular outline with
+        a circular outline inside it. The geometry code will
+        incorrectly truncate the enveloping outline in such cases.
+
+
+   C. General comments:
+      + Despite all these restrictions and shortcomings a user will
+        generally not have any problems creating a board with good
+        geometry. If a user creates a board with bad geometry this
+        will generally be the result of bad design and the user will
+        need to think more carefully about the design.
+
+      + Even if a user does not violate any of the restrictions it
+        is still a trivial matter to create a board outline which
+        is not suitable for manufacture; this is an unavoidable
+        issue in MCAD systems and is not unique to this library.
+        Ultimately it is the user's responsibility to check for
+        manufacturability of the product.
+
+      + The algorithm for determining whether an outline's
+        winding is CW or CCW is simplistic and is only guaranteed
+        to work correctly if all outline segments are line
+        segments. As an example of a case which would yield
+        the wrong result, take 3 segments arranged in an arc
+        to form a bracket '['. Now imagine a large clockwise
+        arc starting at the lower right point and finishing
+        at the upper right point. The winding in this case
+        would be clockwise but the calculation would yield
+        the wrong result. Perhaps this problem could be fixed
+        by treating arcs in a special way and including the
+        halfway point on the arc in the calculations. If the
+        calculated winding value is incorrect then bad geometry
+        shall ensue.

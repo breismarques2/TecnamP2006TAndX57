@@ -1,0 +1,3 @@
+repository='external project URL'
+module='/Users/Bruno/OpenVSP-python3/OpenVSP/repo/Libraries/stepcode-28350d91294b.zip'
+tag=''

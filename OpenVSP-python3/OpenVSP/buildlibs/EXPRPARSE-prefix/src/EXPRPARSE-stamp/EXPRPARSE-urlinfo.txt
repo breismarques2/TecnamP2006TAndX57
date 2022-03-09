@@ -1,0 +1,3 @@
+repository='external project URL'
+module='/Users/Bruno/OpenVSP-python3/OpenVSP/repo/Libraries/exprparse-3e6c7daaa077.zip'
+tag=''

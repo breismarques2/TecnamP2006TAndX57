@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/src/EXPRPARSE/src/exprcalc/exprcalc.cpp
+exprparse.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/src/EXPRPARSE/src/exprcalc/exprparse.h
+iostream
+-
+string
+-
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/src/EXPRPARSE/src/exprparse/exprparse.h
+string
+-
+

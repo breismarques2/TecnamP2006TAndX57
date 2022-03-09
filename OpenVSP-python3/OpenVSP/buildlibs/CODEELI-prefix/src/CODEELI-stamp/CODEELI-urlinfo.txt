@@ -1,0 +1,3 @@
+repository='external project URL'
+module='/Users/Bruno/OpenVSP-python3/OpenVSP/repo/Libraries/Code-Eli-b6e1bd3e17ce.zip'
+tag=''

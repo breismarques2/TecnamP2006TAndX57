@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/clipper/clipper.cpp
+clipper.hpp
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/clipper/clipper.hpp
+cmath
+-
+vector
+-
+algorithm
+-
+stdexcept
+-
+cstring
+-
+cstdlib
+-
+ostream
+-
+functional
+-
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/clipper/clipper.hpp
+vector
+-
+set
+-
+stdexcept
+-
+cstring
+-
+cstdlib
+-
+ostream
+-
+functional
+-
+queue
+-
+

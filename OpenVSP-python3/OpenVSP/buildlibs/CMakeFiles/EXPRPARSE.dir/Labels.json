@@ -1,0 +1,51 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/EXPRPARSE"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/EXPRPARSE.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/EXPRPARSE-complete.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/src/EXPRPARSE-stamp/EXPRPARSE-install.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/src/EXPRPARSE-stamp/EXPRPARSE-mkdir.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/src/EXPRPARSE-stamp/EXPRPARSE-download.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/src/EXPRPARSE-stamp/EXPRPARSE-update.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/src/EXPRPARSE-stamp/EXPRPARSE-patch.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/src/EXPRPARSE-stamp/EXPRPARSE-configure.rule"
+		},
+		
+		{
+			"file" : "/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/EXPRPARSE-prefix/src/EXPRPARSE-stamp/EXPRPARSE-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "EXPRPARSE" ],
+		"name" : "EXPRPARSE"
+	}
+}

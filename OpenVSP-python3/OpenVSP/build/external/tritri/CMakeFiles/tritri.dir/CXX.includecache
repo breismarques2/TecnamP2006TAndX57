@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/tritri/intersect_AABB.cpp
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/tritri/intersect_triangle.cpp
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/tritri/tri_tri_intersect.cpp
+tri_tri_intersect.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/tritri/tri_tri_intersect.h
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/tritri/tri_tri_intersect.h
+

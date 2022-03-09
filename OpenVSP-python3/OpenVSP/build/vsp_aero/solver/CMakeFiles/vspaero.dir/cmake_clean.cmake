@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/vspaero.dir/binaryio.C.o"
+  "CMakeFiles/vspaero.dir/ComponentGroup.C.o"
+  "CMakeFiles/vspaero.dir/ControlSurface.C.o"
+  "CMakeFiles/vspaero.dir/ControlSurfaceGroup.C.o"
+  "CMakeFiles/vspaero.dir/FEM_Node.C.o"
+  "CMakeFiles/vspaero.dir/Gradient.C.o"
+  "CMakeFiles/vspaero.dir/InteractionLoop.C.o"
+  "CMakeFiles/vspaero.dir/RotorDisk.C.o"
+  "CMakeFiles/vspaero.dir/SpanLoadData.C.o"
+  "CMakeFiles/vspaero.dir/VSP_Agglom.C.o"
+  "CMakeFiles/vspaero.dir/VSP_Edge.C.o"
+  "CMakeFiles/vspaero.dir/VSP_Geom.C.o"
+  "CMakeFiles/vspaero.dir/VSP_Grid.C.o"
+  "CMakeFiles/vspaero.dir/VSP_Loop.C.o"
+  "CMakeFiles/vspaero.dir/VSP_Node.C.o"
+  "CMakeFiles/vspaero.dir/VSP_Solver.C.o"
+  "CMakeFiles/vspaero.dir/VSP_Surface.C.o"
+  "CMakeFiles/vspaero.dir/Vortex.C.o"
+  "CMakeFiles/vspaero.dir/VortexSheetInteractionLoop.C.o"
+  "CMakeFiles/vspaero.dir/VortexSheetInteractionStreamLine.C.o"
+  "CMakeFiles/vspaero.dir/VortexSheetVortex_To_VortexInteractionSet.C.o"
+  "CMakeFiles/vspaero.dir/Vortex_Bound.C.o"
+  "CMakeFiles/vspaero.dir/Vortex_Sheet.C.o"
+  "CMakeFiles/vspaero.dir/Vortex_Trail.C.o"
+  "CMakeFiles/vspaero.dir/matrix.C.o"
+  "CMakeFiles/vspaero.dir/MatPrecon.C.o"
+  "CMakeFiles/vspaero.dir/MergeSort.C.o"
+  "CMakeFiles/vspaero.dir/quat.C.o"
+  "CMakeFiles/vspaero.dir/Search.C.o"
+  "CMakeFiles/vspaero.dir/SearchLeaf.C.o"
+  "CMakeFiles/vspaero.dir/time.C.o"
+  "CMakeFiles/vspaero.dir/utils.C.o"
+  "CMakeFiles/vspaero.dir/vspaero.C.o"
+  "CMakeFiles/vspaero.dir/WOPWOP.C.o"
+  "vspaero.pdb"
+  "vspaero"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/vspaero.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

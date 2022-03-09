@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/glfont2/BasicFont.h
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/glfont2/glfont2.cpp
+string
+-
+utility
+-
+iostream
+-
+fstream
+-
+sstream
+-
+windows.h
+-
+OpenGL/gl.h
+-
+GL/gl.h
+-
+glfont2.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/glfont2/glfont2.h
+BasicFont.h
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/glfont2/BasicFont.h
+
+/Users/Bruno/OpenVSP-python3/OpenVSP/repo/src/external/glfont2/glfont2.h
+

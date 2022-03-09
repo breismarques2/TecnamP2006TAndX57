@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libviewerscreens.a  CMakeFiles/viewerscreens.dir/ContourLevel.cxx.o CMakeFiles/viewerscreens.dir/CuttingPlane.cxx.o CMakeFiles/viewerscreens.dir/viewerUI.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libviewerscreens.a

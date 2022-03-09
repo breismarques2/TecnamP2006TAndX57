@@ -1,0 +1,13 @@
+# Target labels
+ LIBIGES
+# Source files and their labels
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/LIBIGES
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/LIBIGES.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/CMakeFiles/LIBIGES-complete.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-install.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-mkdir.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-download.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-update.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-patch.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-configure.rule
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/LIBIGES-prefix/src/LIBIGES-stamp/LIBIGES-build.rule

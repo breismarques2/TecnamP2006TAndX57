@@ -1,0 +1,61 @@
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:3826: WARNING PW052: Possibly ambiguous implicit downcast (oriented_path?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:4887: WARNING PW052: Possibly ambiguous implicit downcast (oriented_path?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:4888: WARNING PW052: Possibly ambiguous implicit downcast (vector?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:4890: WARNING PW052: Possibly ambiguous implicit downcast (direction?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:4365: WARNING PW051: Implicit downcast to point_on_curve.
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:4788: WARNING PW052: Possibly ambiguous implicit downcast (oriented_path?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:4789: WARNING PW052: Possibly ambiguous implicit downcast (vector?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:4789: WARNING PW052: Possibly ambiguous implicit downcast (vector?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:4795: WARNING PW052: Possibly ambiguous implicit downcast (direction?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:4147: WARNING PW052: Possibly ambiguous implicit downcast (direction?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:4148: WARNING PW052: Possibly ambiguous implicit downcast (direction?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:3742: WARNING PW052: Possibly ambiguous implicit downcast (surface_curve?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:5297: WARNING PW052: Possibly ambiguous implicit downcast (vector?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:5298: WARNING PW052: Possibly ambiguous implicit downcast (oriented_path?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:5304: WARNING PW052: Possibly ambiguous implicit downcast (vector?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:5305: WARNING PW052: Possibly ambiguous implicit downcast (oriented_path?).
+/Users/Bruno/OpenVSP-python3/OpenVSP/buildlibs/STEPCODE-prefix/src/STEPCODE/data/ap203/ap203.exp:4701: WARNING PW051: Implicit downcast to point_on_curve.
+WARNING: in SELECT TYPE person_organization_item: ambiguous attribute "frame_of_reference" from underlying type "product_definition".
+
+WARNING: in SELECT TYPE person_organization_item: ambiguous attribute "frame_of_reference" from underlying type "product_definition".
+
+WARNING: in SELECT TYPE person_organization_item: ambiguous attribute "items" from underlying type "change_request".
+
+WARNING: in SELECT TYPE person_organization_item: ambiguous attribute "items" from underlying type "start_request".
+
+WARNING: in SELECT TYPE person_organization_item: ambiguous attribute "items" from underlying type "change_request".
+
+WARNING: in SELECT TYPE person_organization_item: ambiguous attribute "items" from underlying type "start_request".
+
+WARNING: in SELECT TYPE approved_item: ambiguous attribute "kind" from underlying type "contract".
+
+WARNING: in SELECT TYPE approved_item: ambiguous attribute "kind" from underlying type "contract".
+
+WARNING: in SELECT TYPE approved_item: ambiguous attribute "items" from underlying type "change".
+
+WARNING: in SELECT TYPE approved_item: ambiguous attribute "items" from underlying type "start_request".
+
+WARNING: in SELECT TYPE approved_item: ambiguous attribute "items" from underlying type "start_work".
+
+WARNING: in SELECT TYPE approved_item: ambiguous attribute "items" from underlying type "change".
+
+WARNING: in SELECT TYPE approved_item: ambiguous attribute "items" from underlying type "start_request".
+
+WARNING: in SELECT TYPE approved_item: ambiguous attribute "items" from underlying type "start_work".
+
+WARNING: in SELECT TYPE date_time_item: ambiguous attribute "kind" from underlying type "certification".
+
+WARNING: in SELECT TYPE date_time_item: ambiguous attribute "kind" from underlying type "certification".
+
+WARNING: in SELECT TYPE date_time_item: ambiguous attribute "items" from underlying type "start_request".
+
+WARNING: in SELECT TYPE date_time_item: ambiguous attribute "items" from underlying type "change".
+
+WARNING: in SELECT TYPE date_time_item: ambiguous attribute "items" from underlying type "start_work".
+
+WARNING: in SELECT TYPE date_time_item: ambiguous attribute "items" from underlying type "start_request".
+
+WARNING: in SELECT TYPE date_time_item: ambiguous attribute "items" from underlying type "change".
+
+WARNING: in SELECT TYPE date_time_item: ambiguous attribute "items" from underlying type "start_work".
+
