@@ -1,0 +1,24 @@
+WARNING: 2 open meshes remove
+     Removed: propeller
+     Removed: propeller
+WARNING: 2 open meshes merged
+     Merged: main_wing
+     Merged: horizontal_stabilizer
+...Mass Properties...
+4 Num Comps
+4 Total Num Meshes
+6256 Total Num Tris
+
+7.993000             Total Mass
+3.598510 0.000000 0.565960       Center of Gravity
+18.959135 23.968763 39.972917       Ixx, Iyy, Izz
+0.000874 0.532306 -0.000255       Ixy, Ixz, Iyz
+7.993000             Volume
+
+Name	Mass	cgX	cgY	cgZ	Ixx	Iyy	Izz	Ixy	Ixz	Iyz	Volume
+main_wing	2.008510	3.405251	0.000000	1.144078	16.877275	0.271668	17.136644	0.000504	0.002205	0.000146	2.008510
+horizontal_stabilizer	0.176667	8.120819	0.000000	0.331400	0.166304	0.010896	0.176931	-0.000004	-0.000010	0.000023	0.176667
+vertical_stabilizer	0.097232	8.168524	0.000000	1.075109	0.016894	0.034184	0.017449	-0.000001	0.012712	0.000000	0.097232
+fuselage	5.710591	3.448764	-0.000000	0.361213	0.953057	16.859579	16.795063	0.000374	0.527874	-0.000424	5.710591
+Name	Mass	cgX	cgY	cgZ	Ixx	Iyy	Izz	Ixy	Ixz	Iyz	Volume
+Totals	7.993000	3.598510	0.000000	0.565960	18.959135	23.968763	39.972917	0.000874	0.532306	-0.000255	7.993000
