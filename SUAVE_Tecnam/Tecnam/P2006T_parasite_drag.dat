@@ -1,0 +1,31 @@
+Output file with parasite drag breakdown
+
+  VEHICLE TAG : cruise
+
+  REFERENCE AREA ..................  14.8 m2 
+  ASPECT RATIO ....................   8.8    
+  WING SWEEP ......................   0.0 deg
+  WING THICKNESS RATIO ............  0.15    
+  INDUCED DRAG EFFICIENCY FACTOR .. 1.251    
+  MEAN AEROD. CHORD ............... 1.340 m 
+  REYNOLDS NUMBER .................   7.3 millions
+  MACH NUMBER ..................... 0.210    
+
+
+            COMPONENT                 |      CDO      |  WETTED AREA  |  FORM FACTOR  | FLAT PLATE CF.| REYNOLDS FACT.| COMPRES. FACT.|
+                                      |      [-]      |      [m2]     |      [-]      |      [-]      |      [-]      |      [-]      |
+                                      |               |               |               |               |               |               |
+ main_wing                            |    0.00934    |       30.9    |      1.423    |    0.00314    |      0.998    |      0.995    |
+ horizontal_stabilizer                |    0.00163    |        5.3    |      1.325    |    0.00343    |      0.998    |      0.995    |
+ vertical_stabilizer                  |    0.00096    |        3.6    |      1.185    |    0.00336    |      0.998    |      0.995    |
+ fuselage                             |    0.00548    |       25.0    |      1.373    |    0.00236    |      0.998    |      0.995    |
+ internal_combustion  (EACH)          |    0.00079    |        3.5    |      1.117    |    0.00301    |      0.998    |      0.995    |
+ Pylon (TOTAL)                        |    0.00032    |        1.4    |      1.117    |    0.00301    |      0.998    |      0.995    |
+ Miscellaneous Drag                   |    0.00148    |        -      |        -      |        -      |        -      |        -      |
+ Drag Coefficient Increment           |    0.00000    |        -      |        -      |        -      |        -      |        -      |
+                                      |               |               |               |               |               |               |
+                             SUM 	  |    0.02080    |       73.2    |               |               |               |               |
+
+
+-------------------------------------------
+ Thursday, 03. February 2022 01:00:11 PM

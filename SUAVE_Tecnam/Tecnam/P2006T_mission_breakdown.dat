@@ -1,0 +1,17 @@
+Output file with mission profile breakdown
+
+         FLIGHT PHASE           |   ALTITUDE    |     WEIGHT      |  DIST.  | TIME  |  FUEL  |            SPEED              |
+                                | From  |   To  |Initial | Final  |         |       |        |Inicial| Final |Inicial| Final |
+                                |   ft  |   ft  |   kg   |   kg   |    nm   |  min  |   kg   | KCAS  | KCAS  |  Mach |  Mach |
+                                |       |       |        |        |         |       |        |       |       |       |       |
+climb                           |      0|   8000|    1230|    1181|       72|   40.6|      49|   86.0|  112.5|  0.130|  0.197|
+cruise                          |   8000|   8000|    1181|     819|      680|  323.7|     362|  111.9|  111.9|  0.196|  0.196|
+
+
+ Total Range (nm) ...........       752
+ Total Fuel  (kg) ...........       411
+ Total Time  (hh:mm) ........     06:04
+
+
+-------------------------------------------
+ Thursday, 03. February 2022 01:00:11 PM
